@@ -1,0 +1,155 @@
+[
+  {
+    "_id": { "$oid": "64a1f2b3c9e77d001a3f1001" },
+    "product_id": "ELEC-001",
+    "name": "Samsung 65-inch QLED 4K Smart TV",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "price": 85000,
+    "currency": "INR",
+    "stock_quantity": 42,
+    "specifications": {
+      "display": {
+        "size_inches": 65,
+        "resolution": "3840x2160 (4K UHD)",
+        "panel_type": "QLED",
+        "refresh_rate_hz": 120,
+        "hdr_support": ["HDR10+", "HLG"]
+      },
+      "connectivity": {
+        "hdmi_ports": 4,
+        "usb_ports": 2,
+        "wifi": "802.11ac dual-band",
+        "bluetooth": "5.2"
+      },
+      "power": {
+        "voltage": "220-240V",
+        "power_consumption_watts": 190,
+        "standby_watts": 0.5
+      },
+      "smart_features": {
+        "operating_system": "Tizen 7.0",
+        "voice_assistants": ["Bixby", "Alexa", "Google Assistant"],
+        "app_store": true
+      }
+    },
+    "warranty": {
+      "duration_years": 2,
+      "type": "Comprehensive",
+      "covers": ["Manufacturing defects", "Panel failure"],
+      "service_centers": ["Mumbai", "Delhi", "Bangalore", "Chennai", "Hyderabad"]
+    },
+    "ratings": {
+      "average": 4.6,
+      "total_reviews": 1287,
+      "breakdown": {
+        "5_star": 850,
+        "4_star": 280,
+        "3_star": 100,
+        "2_star": 37,
+        "1_star": 20
+      }
+    },
+    "images": [
+      "https://cdn.example.com/elec001-front.jpg",
+      "https://cdn.example.com/elec001-side.jpg"
+    ],
+    "tags": ["4K", "QLED", "smart-tv", "samsung", "home-entertainment"],
+    "is_available": true,
+    "created_at": { "$date": "2024-01-10T09:00:00Z" },
+    "updated_at": { "$date": "2024-03-01T12:00:00Z" }
+  },
+  {
+    "_id": { "$oid": "64a1f2b3c9e77d001a3f1002" },
+    "product_id": "CLTH-001",
+    "name": "Raymond Men's Classic Fit Formal Shirt",
+    "category": "Clothing",
+    "brand": "Raymond",
+    "price": 1799,
+    "currency": "INR",
+    "stock_quantity": 215,
+    "specifications": {
+      "fabric": {
+        "composition": "100% Giza Cotton",
+        "weave": "Oxford",
+        "weight_gsm": 140
+      },
+      "fit": "Classic Fit",
+      "collar_type": "Point Collar",
+      "sleeve_type": "Full Sleeve",
+      "care_instructions": [
+        "Machine wash cold (30°C)",
+        "Do not bleach",
+        "Tumble dry low",
+        "Iron on medium heat (cotton setting)",
+        "Do not dry clean"
+      ]
+    },
+    "available_sizes": ["S", "M", "L", "XL", "XXL", "3XL"],
+    "available_colors": [
+      { "color_name": "White",      "hex_code": "#FFFFFF", "stock": 80 },
+      { "color_name": "Light Blue", "hex_code": "#ADD8E6", "stock": 75 },
+      { "color_name": "Sky Blue",   "hex_code": "#87CEEB", "stock": 40 },
+      { "color_name": "Light Grey", "hex_code": "#D3D3D3", "stock": 20 }
+    ],
+    "target_gender": "Men",
+    "occasion": ["Formal", "Business", "Office", "Corporate"],
+    "certifications": ["OEKO-TEX Standard 100"],
+    "country_of_origin": "India",
+    "ratings": {
+      "average": 4.3,
+      "total_reviews": 563
+    },
+    "tags": ["formal", "cotton", "shirt", "office-wear", "raymond", "business"],
+    "is_available": true,
+    "created_at": { "$date": "2024-01-12T11:00:00Z" },
+    "updated_at": { "$date": "2024-02-20T09:30:00Z" }
+  },
+  {
+    "_id": { "$oid": "64a1f2b3c9e77d001a3f1003" },
+    "product_id": "GROC-001",
+    "name": "Aashirvaad Organic Whole Wheat Flour (Atta) 10kg",
+    "category": "Groceries",
+    "brand": "Aashirvaad",
+    "price": 420,
+    "currency": "INR",
+    "stock_quantity": 530,
+    "specifications": {
+      "weight_kg": 10,
+      "grain_type": "Whole Wheat",
+      "milling_process": "Stone Ground",
+      "organic_certified": true,
+      "certification_body": "FSSAI",
+      "fssai_license": "10014022000126",
+      "packaging_type": "Sealed Poly Bag with Zip Lock"
+    },
+    "nutritional_info_per_100g": {
+      "calories_kcal": 340,
+      "protein_g": 12.0,
+      "total_carbohydrates_g": 71.2,
+      "dietary_fiber_g": 10.8,
+      "total_fat_g": 1.5,
+      "saturated_fat_g": 0.3,
+      "sodium_mg": 2,
+      "iron_mg": 3.2,
+      "calcium_mg": 34
+    },
+    "allergens": ["Wheat", "Gluten"],
+    "suitable_for": ["Vegetarian", "Vegan"],
+    "expiry": {
+      "manufacture_date": { "$date": "2024-10-01T00:00:00Z" },
+      "best_before_date": { "$date": "2025-04-01T00:00:00Z" },
+      "shelf_life_days": 180
+    },
+    "storage_instructions": "Store in a cool, dry place away from direct sunlight. Seal tightly after opening.",
+    "country_of_origin": "India",
+    "ratings": {
+      "average": 4.7,
+      "total_reviews": 8921
+    },
+    "tags": ["atta", "flour", "organic", "whole-wheat", "staple", "vegan"],
+    "is_available": true,
+    "created_at": { "$date": "2024-01-08T07:30:00Z" },
+    "updated_at": { "$date": "2024-03-10T14:00:00Z" }
+  }
+]

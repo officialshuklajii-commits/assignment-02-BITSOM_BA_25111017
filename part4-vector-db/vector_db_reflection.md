@@ -1,0 +1,9 @@
+# Part 4 — Vector Databases
+
+## Vector DB Use Case
+
+Traditional keyword-based search would be fundamentally insufficient for a law firm's plain-English contract search system. Keyword search operates on **lexical overlap** — it finds documents containing the exact words in the query. A lawyer asking "What are the termination clauses?" would completely miss contract sections titled "Exit Provisions" or "Early Discontinuation Rights" — semantically identical but lexically different. In a 500-page legal document, missing such clauses due to wording differences carries serious professional consequences.
+
+This is precisely the problem **vector databases** solve. A vector database converts text into dense numerical embeddings — high-dimensional vectors encoding semantic meaning — using a model such as `sentence-transformers/all-MiniLM-L6-v2`. In this space, "termination clauses" and "exit provisions" produce geometrically close embeddings because the model learned they represent the same legal concept. When a lawyer types a plain-English question, it is converted to a query vector, and the database returns the most semantically similar contract sections using approximate nearest-neighbour search — regardless of exact wording.
+
+The practical architecture works as follows: the 500-page contract is split into overlapping text chunks, each embedded and stored in a vector database such as **Pinecone**, **Weaviate**, or **pgvector**. At query time, the lawyer's question is embedded and matched against stored vectors. The top-k most relevant chunks are passed to a language model to generate a cited, synthesised answer — a pattern called **Retrieval-Augmented Generation (RAG)**. This makes plain-English contract search both accurate and legally traceable, which no keyword system can achieve.
